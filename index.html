@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Ejercicios JS</h1>
+
+    <div class="tabs">
+      <button
+        class="tab active"
+        data-panel="strings"
+        onclick="cambiarTab(this)"
+      >
+        Strings
+      </button>
+      <button class="tab" data-panel="math" onclick="cambiarTab(this)">
+        Math
+      </button>
+      <button class="tab" data-panel="switch" onclick="cambiarTab(this)">
+        Switch
+      </button>
+    </div>
+
+    <!-- Strings -->
+    <section id="strings" class="panel active">
+      <h2>Trabajemos con String</h2>
+      <p>Escribí una frase y después la palabra que querés buscar.</p>
+
+      <label for="frase">Frase</label>
+      <input type="text" id="frase" placeholder="Ej: el perro come la pelota" />
+
+      <label for="palabra">Palabra a buscar</label>
+      <input type="text" id="palabra" placeholder="Ej: pelota" />
+
+      <button onclick="buscarPalabra()">Buscar</button>
+      <p id="resultado-string" class="resultado"></p>
+    </section>
+
+    <!-- Math -->
+    <section id="math" class="panel">
+      <h2>Adivina el número</h2>
+      <p>Hay un número secreto entre 1 y 10. ¿Podés adivinarlo?</p>
+
+      <label for="numero">Tu número</label>
+      <input type="number" id="numero" min="1" max="10" placeholder="1 - 10" />
+
+      <button onclick="adivinar()">Adivinar</button>
+      <button class="btn-secundario" onclick="nuevoJuego()">Nuevo juego</button>
+      <p id="resultado-math" class="resultado"></p>
+    </section>
+
+    <!-- Switch -->
+    <section id="switch" class="panel">
+      <h2>Menú del restaurante</h2>
+      <p>Elegí tu plato y te decimos qué bebida te corresponde.</p>
+
+      <label for="menu">¿Qué pedís?</label>
+      <select id="menu">
+        <option value="">-- elegí un menú --</option>
+        <option value="carne">🥩 Carne</option>
+        <option value="pescado">🐟 Pescado</option>
+        <option value="verdura">🥦 Verdura</option>
+      </select>
+
+      <button onclick="elegirMenu()">Confirmar</button>
+      <p id="resultado-switch" class="resultado"></p>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
