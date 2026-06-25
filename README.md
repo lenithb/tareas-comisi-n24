@@ -12,7 +12,7 @@ Ejercicios de JavaScript para practicar ciclos `while` y `for`. Cada archivo es 
 
 **gestor_horas.js** — ciclo `for` que pide las horas de estudio de cada día de la semana, las acumula y al final muestra el promedio. Ignora valores negativos.
 
-## Ejercicio 5 (pendiente)
+## Ejercicio 5 (Finalizado)
 
 **carrito.js** — simulador de carrito con descuentos progresivos. El `while` sigue agregando productos mientras el usuario confirme. Si el total supera $5000 se aplica un 10% de descuento.
 
